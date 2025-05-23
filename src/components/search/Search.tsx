@@ -17,7 +17,7 @@ const Search = () => {
                 onChange={(e) => setValue(e.target.value)}
                 type="text"
                 placeholder="Поиск товаров..."
-                className="w-full mb-6 px-4 py-2 rounded-md bg-[#2c2c2c] text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition mt-[20px]"
+                className="w-full  mb-6 px-4 py-2 rounded-md bg-[#2c2c2c] text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition mt-[120px]"
             />
 
             {loading ? (

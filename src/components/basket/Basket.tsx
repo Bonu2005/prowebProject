@@ -16,6 +16,7 @@ const AddToCartButton: React.FC<Props> = ({ productName, basket, setBasket }) =>
 
   const handleOk = () => {
     if (!basket.includes(productName)) {
+      localStorage.setItem("basket", JSON.stringify([...basket, productName]))
       setBasket([...basket, productName]);
       message.success(`Товар "${productName}" добавлен в корзину!`);
     } else {

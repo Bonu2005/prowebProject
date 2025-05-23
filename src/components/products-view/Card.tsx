@@ -12,10 +12,10 @@ const Card: React.FC<Props> = ({ item, basket, setBasket }) => {
     const [liked, setLiked] = useState(false);
 
     return (
-        <div className="bg-gray-900 dark:bg-[#121212] text-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+        <div className="bg-[#2c2c2c] dark:bg-[#121212] text-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
             <div className="relative h-[260px] w-full">
                 <img
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                     loading="lazy"
                     src={item.thumbnail}
                     alt={item.title}
